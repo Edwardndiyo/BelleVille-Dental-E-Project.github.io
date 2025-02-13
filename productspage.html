@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title> 
+    
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <!-- font awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="/pages/main.css">
+     <script src="/angular-1.8.2/angular.min.js"></script>
+</head>
+<body>
+
+<!-- header section start -->
+
+<header class="header">
+
+    <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i> Products</a>
+  <!-- use ng-include directive from angularjs to include the offical navbar across every page -->
+    <nav class="navbar">
+        <a href="/index.html">home</a>
+        <a href="#features">features</a>
+        <a href="#products">products</a>
+        <a href="#categories">categories</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <!-- <div class="fas fa-search" id="search-btn"></div> -->
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+    </div>
+
+    <!-- <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form> -->
+    <div class="shopping-cart">
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="/images/toothbrush.png" alt="">
+            <div class="content">
+                <h3>ToothBrush</h3>
+                <span class="price">$4.99/-</span>
+                <span class="quantity">qty : 1</span>
+
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="/images/Dental floss.jpg" alt="">
+            <div class="content">
+                <h3>Floss</h3>
+                <span class="price">$2.99/-</span>
+                <span class="quantity">qty : 4</span>
+
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="/images/toothpaste.jpg" alt="">
+            <div class="content">
+                <h3>ToothPaste</h3>
+                <span class="price">$6.99/-</span>
+                <span class="quantity">qty : 2</span>
+            </div>
+        </div>
+        <div class="total">total : $19.69/- </div>
+        <a href="#" class="btn">checkout</a>
+    </div>
+
+
+    <form action=" " class="login-form">
+        <h3>Login now</h3>
+        <input type="email" id="email" ng-model="email" name="email" placeholder="enter your email" class="box" ng-required="true">
+        <input type="password" placeholder="enter your password" class="box">
+        <p>forgot your password ? <a href="#">click here</a> </p>
+        <p>don't have an account? <a href="#">create now</a> </p>
+
+        <input type="submit" value="login now" class="btn">
+    </form>
+
+</header>
+
+<!-- header section ends  -->
+
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Oral Health Products to keep your Teeth  <span>Strong and Healthy</span></h3>
+        <p>Revitalize Your Smile with Our High-Quality Oral Health Products for Stronger, Healthier Teeth!
+        </p>
+        <a href="/pages/add-to-cart/index.html" class="btn">shop now</a>
+    </div>
+
+</section>
+
+<!-- home section ends  -->
+
+
+<!-- features section start -->
+
+<section class="features" id="features">
+
+    <h1 class="heading"> our <span>features</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="/images/Government approved.jpg" alt="">
+            <h3>government approved</h3>
+
+            <p>Explore our wide range of Government Approved dental products, ensuring quality and peace of mind for your oral care.</p>
+                <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="/images/Free delivery.jpg" alt="">
+            <h3>free delivery</h3>
+
+            <p>Enjoy the convenience of Free Delivery on all your dental product orders, making oral care accessible and hassle-free.</p>
+                <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="/images/Easy payment.jpg" alt="">
+            <h3>easy payment</h3>
+
+            <p>Simplify your shopping experience with Easy Payment options, allowing you to purchase dental products conveniently and securely.</p>
+                <a href="#" class="btn">read more</a>
+        </div>
+    </div>
+</section>
+
+<!-- features section ends  -->
+
+
+<!-- products section starts  -->
+
+<section class="products" id="products">
+
+    <h1 class="heading"> our <span>products</span> </h1>
+
+    <div class="swiper product-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="/images/toothbrush.png" alt="">
+                <h3>Electric brush</h3>
+                <div class="price"> $4.99/- - 10.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="/pages/add-to-cart/index.html" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="/images/Dental floss.jpg" alt="">
+                <h3>Dental Floss</h3>
+                <div class="price"> $4.99/- - 10.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="/pages/add-to-cart/index.html" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="/images/toothpaste.jpg" alt="">
+                <h3>Herbal toothpaste</h3>
+                <div class="price"> $4.99/- - 10.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="/pages/add-to-cart/index.html" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="/images/Gum Soft-picks Advanced Mint, Dental Care Dental Floss Tooth Picks, 120 Picks.jpg" alt="">
+                <h3>toothpick</h3>
+                <div class="price"> $4.99/- - 10.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="/pages/add-to-cart/index.html" class="btn">add to cart</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="swiper product-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="/images/electrictoothbrush.jpg" alt="">
+                <h3>Electric brush</h3>
+                <div class="price"> $4.99/- - 10.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="/pages/add-to-cart/index.html" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="/images/Dental floss.jpg" alt="">
+                <h3>Dental Floss</h3>
+                <div class="price"> $4.99/- - 10.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="/pages/add-to-cart/index.html" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="/images/toothpaste.jpg" alt="">
+                <h3>Herbal toothpaste</h3>
+                <div class="price"> $4.99/- - 10.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="/pages/add-to-cart/index.html" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="/images/Gum Soft-picks Advanced Mint, Dental Care Dental Floss Tooth Picks, 120 Picks.jpg" alt="">
+                <h3>toothpick</h3>
+                <div class="price"> $4.99/- - 10.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="/pages/add-to-cart/index.html" class="btn">add to cart</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- products section ends  -->
+
+<!-- categories section starts 0 -->
+
+<section class="categories" id="categories">
+
+    <h1 class="heading"> product <span>categories</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="/images/Cvs Health Power Oral Care Multi-tool System Dental Healthcare.jpg" alt="">
+            <h3>Oral health</h3>
+            <p>upto 45% off</p>
+            <a href="/pages/add-to-cart/index.html" class="btn">View products</a>
+        </div>
+
+        <div class="box">
+            <img src="/images/electrictoothbrush.jpg" alt="">
+            <h3>Electrical appliances</h3>
+            <p>upto 45% off</p>
+            <a href="/pages/add-to-cart/index.html" class="btn">View products</a>
+        </div>
+
+        <div class="box">
+            <img src="/images/Teeth whittening.png" alt="">
+            <h3>Teeth whittening</h3>
+            <p>upto 45% off</p>
+            <a href="/pages/add-to-cart/index.html" class="btn">View products</a>
+        </div>
+
+        <div class="box">
+            <img src="/images/Mouthwash.jpg" alt="">
+            <h3>mouth wash</h3>
+            <p>upto 45% off</p>
+            <a href="/pages/add-to-cart/index.html" class="btn">View products</a>
+        </div>
+    </div>
+
+</section>
+
+<!-- categories section ends  -->
+
+
+<!-- footer section starts  -->
+
+
+<section class="footer">
+
+    <div class="box-container container">
+ 
+       <div class="box">
+          <i class="fas fa-phone"></i>
+          <h3>phone number</h3>
+          <p>+234-807-334-2004</p>
+          <p>+234-807-334-2004</p>
+          <p>+234-807-334-2004</p>
+       </div>
+       
+       <div class="box">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>our address</h3>
+          <p>Cross River State, Nigeria - 5401</p>
+       </div>
+ 
+       <div class="box">
+          <i class="fas fa-clock"></i>
+          <h3>opening hours</h3>
+          <p>00:07am to 10:00pm</p>
+       </div>
+ 
+       <div class="box">
+          <i class="fas fa-envelope"></i>
+          <h3>email address</h3>
+          <p>ndiyoedward@gmail.com</p>
+          <p>DavidAnsa@gmail.com</p>
+          <p>VictoryOladosu@gmail.com</p>
+ 
+       </div>
+ 
+    </div>
+ 
+    <div class="credit"> &copy; copyright @ 2023 by <span> Belleville Dental</span>  </div>
+ 
+ </section>
+ 
+
+ <!-- footer section ends -->
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link -->
+    <script src="/pages/main.js"></script>
+</body>
+</html>

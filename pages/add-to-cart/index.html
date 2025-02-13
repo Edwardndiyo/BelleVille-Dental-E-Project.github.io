@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+    <title>Add to cart</title>
+</head>
+<body>
+    
+    <div class="header">
+        <a href="/productspage.html" class="logo">BelleVille<span>Dental.</span></a>
+        <div class="cart">
+            <i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <form action="" class="search-form">
+            <input type="search" id="searchBox" placeholder="search products...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+    </div>
+    
+    <div class="container">
+        <div id="root"></div>
+        <div class="sidebar">
+            <div class="head"> <p>My cart</p> </div>
+            <div id="cartItem">Your cart is empty</div>
+            <div class="foot">
+                <h3>Total</h3>
+                <h2 id="total">$ 0.00</h2>
+            </div>
+            <div class="checkout">
+                <a href="#">Check-out</a>
+            </div>
+        </div>
+    </div>
+    <script src="addto-cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!-- Appointment form -->
+<contact_form> 
+  <name>
+  </name>
+
+  <email>
+  </email>
+
+  <number>
+  </number>
+
+  <appointmentDate>
+  </appointmentDate>
+</contact_form>
+
+
+<!-- Products -->
+<products>
+  <product_id>
+  </product_id>
+
+  <product_Name>
+  </product_Name>
+
+  <product_Price>
+  </product_Price>
+
+  <discount>
+  </discount>
+</products>
+
+
+<!--  order -->
+<customer_order>
+  <email>
+  </email>
+
+  <full_name>
+  </full_name>
+
+  <product_id>
+  </product_id>
+
+  <quality>
+  </quality>
+
+  <delivery_address>
+  </delivery_address>
+
+  <comment>
+  </comment>
+</customer_order>
